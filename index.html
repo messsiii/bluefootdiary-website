@@ -3,137 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fbf7ed">
-  <meta name="description" content="蓝脚日记是一款给孩子使用的 iPhone 练琴手账。今天知道练什么，一键开始，在蓝脚鸟的陪伴下看见自己的进步。">
-  <title>蓝脚日记｜今天也和音乐见一面</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23fbf7ed'/%3E%3Cellipse cx='31' cy='41' rx='18' ry='11' fill='%23168fb6'/%3E%3Ccircle cx='15' cy='26' r='7' fill='%23168fb6'/%3E%3Ccircle cx='30' cy='20' r='7' fill='%23168fb6'/%3E%3Ccircle cx='46' cy='26' r='7' fill='%23168fb6'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#f2f8f7">
+  <title>蓝脚日记｜把练琴写成自己的四小节</title>
+  <meta name="description" content="从今天知道练什么，到一屏练琴、留下足迹。沿巴赫的四小节，了解蓝脚日记怎样陪孩子练琴。">
+  <link rel="preload" as="image" href="assets/app-today-current.webp">
+  <link rel="stylesheet" href="score.css?v=20261005-interactive">
+  <link rel="stylesheet" href="company.css">
+  <script defer src="bach-score-image.js"></script>
+  <script defer src="score.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">跳到主要内容</a>
-  <header class="site-header">
-    <nav class="nav wrap" aria-label="主导航">
-      <a class="brand" href="#top" aria-label="蓝脚日记，返回页首">
-        <img src="assets/bird-avatar.webp" alt="" width="42" height="42">
-        <span>蓝脚日记</span>
-      </a>
-      <div class="nav-links">
-        <a href="#first-minute">第一次练琴</a>
-        <a href="#experience">练琴日常</a>
-        <a href="#privacy">安心练习</a>
-        <a href="#company">关于公司</a>
-      </div>
-      <span class="availability"><span class="status-dot" aria-hidden="true"></span>iPhone 版筹备上线</span>
-    </nav>
-  </header>
+  <a class="skip-link" href="#score-story">跳到乐谱</a>
+  <main>
+    <section class="score-story" id="score-story" aria-label="沿着四小节乐谱，看一次完整练琴体验">
+      <div class="motion-stage" aria-hidden="true">
+        <div class="paper-surface" aria-hidden="true"></div>
+        <header class="topbar">
+          <div class="brand"><img src="assets/bird-avatar-current.png" alt="" width="40" height="40"><span>蓝脚日记</span></div>
+          <span class="topbar-side">一次练琴的四小节 · <a href="#company">关于公司</a></span>
+        </header>
 
-  <main id="main">
-    <section class="hero wrap" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> 给孩子的练琴手账</p>
-        <h1 id="hero-title">今天，也和<br><em>音乐见一面。</em></h1>
-        <p class="hero-intro">先选喜欢的乐器，练 1 分钟，盖上第一个印章。从今天要练的曲子到每一次回看，蓝脚鸟陪你按自己的节奏前进。</p>
-        <a class="primary-link" href="#first-minute">从第一分钟开始 <span aria-hidden="true">↗</span></a>
-        <p class="hero-note">为 iPhone 设计 · 无需账号 · 记录保存在本机</p>
-        <p class="publisher-note">由 <a href="#company">天津卯丁信息科技有限公司</a> 开发与运营</p>
-      </div>
-      <div class="hero-art" aria-label="蓝脚日记当前版本在 iPhone 17 Pro 模拟器上的首页截图">
-        <div class="paper-halo" aria-hidden="true"></div>
-        <div class="phone">
-          <img src="assets/app-today-2026.webp" alt="新版首页：蓝脚鸟、第一个印章、本周打卡、今天练这些和底部开始练琴入口" width="1206" height="2622" fetchpriority="high">
+        <div class="opening-copy">
+          <h1>每一次练琴，<br>都值得被记住。</h1>
+          <p>向下滑，从今天要练什么，走到练完后的那枚印章。</p>
         </div>
-        <img class="hero-bird" src="assets/bird-waiting.webp" alt="" width="250" height="365">
-        <span class="handwritten-note" aria-hidden="true">慢慢来，<br>每一拍都算数。</span>
-      </div>
-    </section>
 
-    <section class="first-minute wrap" id="first-minute" aria-labelledby="first-minute-title">
-      <div class="first-minute-copy">
-        <p class="eyebrow">第一次打开，就能开始</p>
-        <h2 id="first-minute-title">不用准备好，<br>先练一分钟。</h2>
-        <p>蓝脚鸟先来打招呼。选好乐器，就能直接打开练琴台；练完保存，第一枚印章会出现在你的日记里。</p>
-        <ol class="mini-steps"><li>选一件正在练的乐器</li><li>跟着自己的节奏练 1 分钟</li><li>保存这次练习，留下第一个印章</li></ol>
-        <p class="image-context">图片来自当前版本 iPhone 17 Pro 模拟器的首次使用流程。</p>
-      </div>
-      <div class="first-minute-screens">
-        <a href="assets/onboarding-instrument.webp" target="_blank" rel="noopener" aria-label="放大查看选乐器页面的真实截图"><img src="assets/onboarding-instrument.webp" alt="首次使用时选择乐器，可选钢琴、小提琴、大提琴、长笛或其他" width="1206" height="2622" loading="lazy"></a>
-        <a href="assets/onboarding-first-minute.webp" target="_blank" rel="noopener" aria-label="放大查看开始练一分钟页面的真实截图"><img src="assets/onboarding-first-minute.webp" alt="首次使用引导的最后一步：开始练习一分钟，保存后获得第一个印章" width="1206" height="2622" loading="lazy"></a>
-      </div>
-    </section>
+        <div class="chapter-mark" aria-hidden="true"><span>一次练琴的四步</span><strong>01<span> / 04</span></strong></div>
+        <div class="beat-panel" aria-hidden="true"><span>跟着这一拍</span><strong class="beat-count">01</strong><div class="beat-dots"><i></i><i></i><i></i><i></i></div></div>
 
-    <section class="journey" id="experience" aria-labelledby="journey-title">
-      <div class="wrap">
-        <div class="section-heading">
-          <p class="eyebrow">一段自然的练琴时间</p>
-          <h2 id="journey-title">从开始，到看见进步。</h2>
+        <div class="score-label"><span>巴赫 · BWV 846</span><span>4/4 · 第 1–4 小节</span></div>
+        <div class="score-rail">
+          <div class="score-track">
+            <svg class="score-svg" viewBox="0 0 2200 440" role="img" aria-label="巴赫 C 大调前奏曲 BWV 846 第一至第四小节，钢琴大谱表，高低音谱号与四四拍">
+              <defs><linearGradient id="phrase-gradient" x1="0" x2="1"><stop offset="0" stop-color="#5bb4c9"/><stop offset=".55" stop-color="#087f9e"/><stop offset="1" stop-color="#e1b858"/></linearGradient></defs>
+              <g class="note-aura" aria-hidden="true"><circle class="aura-outer" cx="245" cy="250" r="41"/><circle class="aura-inner" cx="245" cy="250" r="25"/></g>
+              <image class="score-sheet-image" href="assets/bach-original-excerpt.svg" x="0" y="110" width="2200" height="293.3" aria-hidden="true"/>
+              <line class="playhead" x1="244" x2="244" y1="112" y2="402" aria-hidden="true"/>
+              <circle class="playhead-dot" cx="244" cy="406" r="5" aria-hidden="true"/>
+              <image class="score-bird" href="assets/bird-waiting-current.png" x="195" y="0" width="82" height="114" aria-hidden="true"/>
+            </svg>
+          </div>
         </div>
-        <div class="steps">
-          <article class="step-card">
-            <span class="step-no">01 / 计划</span>
-            <h3>把这周的曲子排好</h3>
-            <p>添加曲目与乐器，写下本周练习内容，设定周目标。保存后，曲目会进入本周待办，也会出现在「今天」页。</p>
-            <a class="step-visual screen-visual" href="assets/app-plan-2026.webp" target="_blank" rel="noopener" aria-label="查看练习计划页面大图">
-              <img src="assets/app-plan-2026.webp" alt="当前版本练习计划页面：本周目标、本周待办的小星星变奏曲和曲目与乐器入口" loading="lazy" width="1206" height="2622">
-            </a>
-          </article>
-          <article class="step-card">
-            <span class="step-no">02 / 练琴</span>
-            <h3>练琴时，不用来回切页</h3>
-            <p>计时器、可调 BPM 与拍号的节拍器、录音、录像、心得和保存按钮都在同一屏。暂停练习时，节拍器也会停。</p>
-            <a class="step-visual screen-visual" href="assets/app-practice-2026.webp" target="_blank" rel="noopener" aria-label="查看练琴台页面大图">
-              <img src="assets/app-practice-2026.webp" alt="当前版本练琴台页面：计时、BPM、拍号、录音、录像、心得和结束保存" loading="lazy" width="1206" height="2622">
-            </a>
-          </article>
-          <article class="step-card">
-            <span class="step-no">03 / 足迹</span>
-            <h3>回看练过的每一天</h3>
-            <p>「足迹」日历标出练习日期，点进当天能查看时长和每次记录；有多种乐器时，也可以只看其中一种。录音、录像能从这里回放。</p>
-            <a class="step-visual screen-visual" href="assets/app-footprints-2026.webp" target="_blank" rel="noopener" aria-label="查看练习足迹页面大图">
-              <img src="assets/app-footprints-2026.webp" alt="当前版本练习足迹页面：连续练习、日历印章、当天时长和练习记录" loading="lazy" width="1206" height="2622">
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section class="little-reminders wrap" aria-labelledby="little-reminders-title">
-      <div class="section-heading">
-        <p class="eyebrow">练琴以外，也记得你</p>
-        <h2 id="little-reminders-title">想练的时候，一步就回来。</h2>
-        <p>主屏与锁屏小组件能看到练习的印章和连续天数；练琴时，计时与节拍器速度也能显示在锁屏和灵动岛。</p>
-      </div>
-      <div class="reminder-layout">
-        <a class="widget-preview" href="assets/widget-gallery-preview.webp" target="_blank" rel="noopener" aria-label="放大查看 App 内小组件样式预览">
-          <img src="assets/widget-gallery-preview.webp" alt="App 内的小组件样式预览，展示主屏和锁屏上的练习印章与练琴入口，画面使用演示数据" width="1206" height="2622" loading="lazy">
-          <span>App 内样式预览 · 演示数据 ↗</span>
-        </a>
-        <div class="reminder-points">
-          <div><span aria-hidden="true">01</span><h3>主屏一眼看见今天</h3><p>小组件展示今天练了多久、本周印章；想继续时，点一下回到练琴台。</p></div>
-          <div><span aria-hidden="true">02</span><h3>锁屏上留着练琴时间</h3><p>开始练习后，实时活动显示计时、暂停状态和节拍器速度，保存或取消后结束。</p></div>
-          <div><span aria-hidden="true">03</span><h3>用熟悉的语言练</h3><p>App 界面已加入简体中文、繁体中文和英文；这些记录仍只保存在自己的设备上。</p></div>
+        <div class="measure-copy" aria-live="off">
+          <span class="measure-number">01 / 今天</span>
+          <h2>打开今天，<br>知道下一步。</h2>
+          <p>这周要练的曲子出现在眼前。想开始时，一下就进入练琴台。</p>
+          <div class="feature-chips"><span>本周待办</span><span>一键开练</span></div>
         </div>
-      </div>
-    </section>
 
-    <section class="privacy wrap" id="privacy" aria-labelledby="privacy-title">
-      <div class="privacy-mark" aria-hidden="true">♪</div>
-      <div>
-        <p class="eyebrow">给孩子留一块自己的空间</p>
-        <h2 id="privacy-title">练琴，不是交作业。</h2>
-        <p>蓝脚日记没有账号、家长监控或排行榜。练习记录、曲目和待办保存在这台 iPhone；录音与录像也留在本机。核心练习无需联网，只有主动使用在线曲目目录搜索时才需要网络。</p>
-      </div>
-    </section>
-
-    <section class="closing" aria-labelledby="closing-title">
-      <div class="wrap closing-inner">
-        <img src="assets/bird-waiting.webp" alt="" loading="lazy" width="135" height="197">
-        <div>
-          <p class="eyebrow">蓝脚日记 · iPhone</p>
-          <h2 id="closing-title">今天就从一首曲子开始。</h2>
-          <p>下载入口将在 iPhone 版开放时更新。</p>
+        <div class="phone-area" role="img" aria-label="蓝脚日记 iPhone 模拟器截图：今天页">
+          <div class="phone-halo" aria-hidden="true"></div>
+          <div class="phone-frame">
+            <img class="phone-screen" src="assets/app-today-current.webp" alt="" width="1206" height="2622">
+            <img class="phone-screen" src="assets/app-plan-current.webp" alt="" width="1206" height="2622">
+            <img class="phone-screen" src="assets/app-practice-current.webp" alt="" width="1206" height="2622">
+            <img class="phone-screen" src="assets/app-footprints-current.webp" alt="" width="1206" height="2622">
+          </div>
         </div>
+
+        <div class="progress" aria-hidden="true"><span class="progress-measure">01 / 今天</span><span class="progress-line"><i></i></span><span>04 / 足迹</span></div>
+        <span class="scroll-cue" aria-hidden="true">继续向下滑　↓</span>
+      </div>
+
+      <div class="static-fallback">
+        <header class="topbar"><div class="brand"><img src="assets/bird-avatar-current.png" alt="" width="40" height="40"><span>蓝脚日记</span></div><span class="topbar-side">一次练琴的四小节 · <a href="#company">关于公司</a></span></header>
+        <h1>每一次练琴，<br>都值得被记住。</h1>
+        <p class="fallback-intro">从今天要练什么，到练完后留下自己的足迹。</p>
+        <article><div><span>01 / 今天</span><h2>打开今天，知道下一步。</h2><p>这周要练的曲子出现在眼前。想开始时，一下就进入练琴台。</p></div><img src="assets/app-today-current.webp" alt="蓝脚日记当前 iPhone 模拟器截图：今天页已有本周曲目" width="1206" height="2622"></article>
+        <article><div><span>02 / 计划</span><h2>把一首曲子，放进这周。</h2><p>给曲子选乐器，写下这周要练的内容和目标。下次打开，就知道从哪里接着练。</p></div><img src="assets/app-plan-current.webp" alt="蓝脚日记当前 iPhone 模拟器截图：计划页有本周目标和曲目" width="1206" height="2622"></article>
+        <article><div><span>03 / 练琴</span><h2>专心练，工具都在这里。</h2><p>计时、暂停、节拍器、录音、录像和心得都在同一屏；停下来时，节拍也一起停。</p></div><img src="assets/app-practice-current.webp" alt="蓝脚日记当前 iPhone 模拟器截图：练琴台" width="1206" height="2622"></article>
+        <article><div><span>04 / 足迹</span><h2>练过的每一天，都看得见。</h2><p>保存后留下日历印章和练习记录。想回听、回看，声音和画面都留在自己的手机里。</p></div><img src="assets/app-footprints-current.webp" alt="蓝脚日记当前 iPhone 模拟器截图：练习足迹有一次练习记录" width="1206" height="2622"></article>
       </div>
     </section>
+    <section class="reward-section" aria-labelledby="reward-title"><div class="reward-inner"><div class="reward-intro"><p class="value-eyebrow">练完之后</p><h2 id="reward-title">练完这一刻，<br>值得被看见。</h2><p>保存这次练习，会留下记录、印章和一点小小的庆祝。积累起来，蓝脚鸟的家也会慢慢变化。</p></div><div class="reward-grid"><article class="reward-card"><div class="reward-copy"><span>第一次，就值得纪念</span><h3>一枚属于自己的贴纸</h3><p>第一次练完便会获得贴纸，之后也能在贴纸册里回看。</p></div><img src="assets/app-sticker-current.webp" alt="当前 iPhone 模拟器截图：第一次练完后解锁蓝脚印贴纸" width="1206" height="2622" loading="lazy"></article><article class="reward-card"><div class="reward-copy"><span>让时间长出形状</span><h3>和蓝脚鸟一起，慢慢筑巢</h3><p>累计练习时间会推动鸟巢成长；每次打开，看看自己走到了哪里。</p></div><img src="assets/app-nest-current.webp" alt="当前 iPhone 模拟器截图：蓝脚鸟巢与已收集贴纸" width="1206" height="2622" loading="lazy"></article></div></div></section>
+    <section class="value-section" aria-labelledby="value-title"><div class="value-inner"><p class="value-eyebrow">蓝脚日记想留下的</p><h2 id="value-title">练琴是孩子自己的事。<br>进步，也该由自己看见。</h2><div class="value-grid"><article><span>01</span><h3>有下一步</h3><p>曲目、这周的练习内容和今天的入口连在一起，打开就知道做什么。</p></article><article><span>02</span><h3>有自己的节奏</h3><p>一分钟也能开始。节拍、暂停、录音与录像随手可用，不用为了记录打断练习。</p></article><article><span>03</span><h3>有留下来的进步</h3><p>日期、时长和练习片段留在本机；蓝脚鸟印章让每次练习都有回响。</p></article></div><p class="privacy-note">无需账号、排行榜或家长监控。核心练习离线可用；主动搜索在线曲目目录时才需要网络。</p></div></section>
     <section class="company-section wrap" id="company" aria-labelledby="company-title">
       <div class="company-intro">
         <p class="eyebrow">关于公司</p>
@@ -152,10 +96,7 @@
         </dl>
       </div>
     </section>
+    <footer class="page-end"><p>今天练一点，明天还能从这里继续。</p><p class="company-credit">© 2026 天津卯丁信息科技有限公司 · 蓝脚日记由本公司开发与运营</p><nav class="company-end-links" aria-label="页脚导航"><a href="#company">关于公司</a><a href="#contact">联系我们</a><a href="#score-story">回到顶部 ↑</a></nav><p class="release-note">iPhone 版筹备上线，下载入口将在开放时更新。</p><small>乐谱节选自巴赫《平均律》C 大调前奏曲 BWV 846 第 1–4 小节。<a href="https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=5" target="_blank" rel="noopener">乐谱底图：Mutopia 原谱</a>。App 不在应用内显示乐谱。手机画面为当前版本 iPhone 17 Pro 模拟器实拍；画面中的练习时长仅为示例。</small></footer>
   </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-inner company-footer"><div><span>© 2026 天津卯丁信息科技有限公司</span><p>蓝脚日记由本公司开发与运营</p></div><nav aria-label="页脚导航"><a href="#company">关于公司</a><a href="#contact">联系我们</a><a href="#top">回到顶部 ↑</a></nav></div>
-  </footer>
 </body>
 </html>

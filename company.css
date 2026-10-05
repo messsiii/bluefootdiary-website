@@ -1,0 +1,29 @@
+/* Company identity and contact information */
+
+.publisher-note{margin:10px 0 0;font-size:12px;line-height:1.8;color:var(--muted)}
+.publisher-note a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.company-section{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:64px;padding-top:80px;padding-bottom:80px;scroll-margin-top:24px}
+.company-intro h2{font-size:28px;line-height:1.5;letter-spacing:-.025em;margin:0 0 8px}
+.company-intro .eyebrow{margin-bottom:14px}
+.company-intro p:not(.eyebrow){font-size:15px;line-height:1.9;color:var(--muted);margin:16px 0 0}
+.company-intro p.company-english{font-size:13px;line-height:1.7;margin-top:0;overflow-wrap:anywhere}
+.company-contact{min-width:0;border:1px solid var(--line);border-radius:22px;padding:28px;background:var(--page);align-self:start;scroll-margin-top:24px}
+.company-contact h3{font-size:22px;margin:0 0 12px}
+.company-contact>p{font-size:14px;line-height:1.8;color:var(--muted);margin:0 0 24px}
+.company-contact dl{margin:0;display:grid;gap:20px}
+.company-contact dt{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:6px}
+.company-contact dd{margin:0;font-size:14px;line-height:1.8;overflow-wrap:anywhere}
+.company-contact address{font-style:normal}
+.company-contact a{color:var(--blue);text-decoration:underline;text-underline-offset:4px}
+.company-footer{justify-content:space-between;gap:20px;padding-top:24px;padding-bottom:24px}
+.company-footer p{margin:7px 0 0;font-size:12px;line-height:1.7}
+.company-footer nav{display:flex;flex-wrap:wrap;gap:20px;line-height:1.8}
+@media(max-width:950px){.company-section{gap:32px}}
+@media(max-width:700px){.company-section{grid-template-columns:1fr;gap:26px;padding-top:54px;padding-bottom:54px}.company-intro h2{font-size:24px}.company-contact{padding:24px}.company-footer{align-items:flex-start;flex-direction:column;gap:16px}.publisher-note{font-size:11px}}
+
+.company-section{width:min(1200px,calc(100% - 64px));margin-inline:auto}
+.company-section a:focus-visible,.topbar-side a:focus-visible,.company-end-links a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.topbar-side a{color:var(--blue);text-underline-offset:4px}
+.company-credit,.release-note{font-size:13px!important;line-height:1.8!important}
+.company-end-links{display:flex;justify-content:center;flex-wrap:wrap;gap:24px;margin:20px 0;font-size:14px}
+@media(max-width:700px){.company-section{width:calc(100% - 36px)}.topbar-side{font-size:11px}}

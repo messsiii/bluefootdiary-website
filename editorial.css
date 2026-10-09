@@ -1,0 +1,29 @@
+/* Shared editorial rules for Chinese and English pages. */
+:root{--type-section:40px;--type-body:18px;--type-small:13px;--weight-heading:600;--heading-spacing:-.025em;--body-leading:1.75}
+html[lang=zh-CN]{--heading-spacing:-.005em}
+.hero h1{letter-spacing:var(--heading-spacing)}
+.chapter h2,html[lang=en] .chapter h2,.privacy h2,.faq h2,.collection h2{font-size:var(--type-section);font-weight:var(--weight-heading);line-height:1.25;letter-spacing:var(--heading-spacing);text-wrap:balance}
+.hero-product-copy h2,.closing h2{font-weight:var(--weight-heading);letter-spacing:var(--heading-spacing);text-wrap:balance}
+.description,.lead,.privacy p,.faq-list p,.collection-intro>p:last-child,.closing>p:not(.phase){font-size:var(--type-body);line-height:var(--body-leading);text-wrap:pretty}
+.product-label{font-size:16px;line-height:1.5;color:#d0d3d5;margin-bottom:22px}
+.lead{max-width:520px}.local-note,.scroll-hint,.screenshot-note,.site-footer{font-size:var(--type-small)}
+.nav .release,.launch-status{background:none;border:0;border-radius:0;padding:0;color:#b9bec2;font-size:13px}.nav .release{margin-left:auto}
+.nav .language-switch{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:8px}
+.phase{border:0;border-radius:0;background:none;padding:0;font-size:14px;color:#acb8bf;margin-bottom:20px;font-weight:500}
+.bridge{padding:75px 24px}.bridge p{font-size:clamp(26px,3vw,42px);line-height:1.55;letter-spacing:var(--heading-spacing)}
+.chapter-stage{min-height:720px}.product-scene{min-height:720px;mask-image:none;overflow:visible}.chapter-device{width:290px;transform:none}.motion .chapter-device,.motion .focus .chapter-device{transform:translateY(calc((.5 - var(--p))*35px))}.scene-ring{opacity:.4}
+.chapters>.screenshot-note{text-align:center;color:#929ba1;margin:0 0 24px}
+.privacy{padding:70px 24px}.closing{padding-top:80px}.closing .phase{margin-bottom:24px}.launch-status{margin-top:28px}.mobile-menu{display:none}
+@media(max-width:1000px) and (min-width:761px){.nav nav{gap:18px}.nav .release{display:none}.chapter-stage{gap:40px}.chapter-device{width:260px}}
+@media(max-width:760px){
+ :root{--type-section:32px;--type-body:16px;--type-small:12px}
+ .nav{padding:5px 10px 5px 15px;gap:7px}.nav>nav,html[lang=en] .nav>nav{display:none}.nav .language-switch{margin-left:auto;min-width:44px;min-height:44px;border:0}.nav .release{display:none}
+ .mobile-menu{display:block;position:static}.mobile-menu summary{list-style:none;cursor:pointer;min-height:44px;min-width:44px;display:flex;align-items:center;justify-content:center;font-size:13px}.mobile-menu summary::-webkit-details-marker{display:none}
+ .mobile-menu nav,html[lang=en] .mobile-menu nav{display:flex;position:absolute;top:calc(100% + 8px);right:0;min-width:190px;padding:12px;background:#161819;border:1px solid #ffffff20;border-radius:20px;flex-direction:column;gap:0;margin:0;box-shadow:0 16px 40px #0008}
+ .mobile-menu nav a,.nav .mobile-menu nav a:last-child{display:flex;align-items:center;min-height:46px;padding:10px 16px;font-size:15px}
+ .motion .hero-copy,html[lang=en] .motion .hero-copy{top:20%;padding:0 24px}.hero h1{font-size:54px}html[lang=en] .hero h1{font-size:48px}.product-label{font-size:14px;margin-bottom:16px}.lead,html[lang=en] .lead{font-size:16px;line-height:1.65;margin-top:24px;max-width:340px}
+ .local-note{margin-top:22px}.bridge{padding:65px 24px}.bridge p{font-size:26px;line-height:1.6}
+ .chapter-stage{min-height:0;padding:40px 0}.product-scene{min-height:650px;margin-top:28px;overflow:visible}.chapter-device{width:min(270px,78vw);border-radius:40px}.chapter-device img{border-radius:33px}.motion .chapter-device,.motion .focus .chapter-device{transform:none}
+ .description{font-size:16px}.phase{font-size:13px;padding:0}.privacy p,.faq-list p,.collection-intro>p:last-child,.closing>p:not(.phase){font-size:16px}.closing h2{font-size:38px}.site-footer a{display:inline-flex;align-items:center;min-height:44px}.about-page .nav .language-switch{min-width:44px}.about-main h2{font-weight:600}
+}
+@media(max-height:720px) and (max-width:760px){.motion .hero-copy,html[lang=en] .motion .hero-copy{top:18%}.hero h1{font-size:48px}html[lang=en] .hero h1{font-size:44px}.product-label{margin-bottom:12px}.lead,html[lang=en] .lead{margin-top:18px}.action{margin-top:20px}.local-note{margin-top:18px}}
